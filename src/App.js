@@ -3,7 +3,8 @@ import "./App.css"
 import Test from './components/Test';
 import { Container, Button, ButtonGroup, Paper,TextField,Stack } from '@mui/material';
 import { ReactComponent as Logo } from "./images/space01.svg"
-export function App() {
+
+function App() {
 
     const [order, setOrder] = useState("ascending");
     const [search, setSearch] = useState("")
@@ -53,10 +54,10 @@ export function App() {
                 alignItems="flex-end"
             >
                 <ButtonGroup variant="contained" aria-label="outlined primary button group" class="buttonGroup" >
-                            <Button onClick={() => { setOrder("") } }>View All</Button>
-                            <Button onClick={() => { setOrder("ascending") }}>Ascending</Button>
-                            <Button onClick={() => { setOrder("descending") }}>Descending</Button>
-                        </ButtonGroup>
+                    <Button onClick={() => { setOrder("") } }>View All</Button>
+                    <Button onClick={() => { setOrder("ascending") }}>Ascending</Button>
+                    <Button onClick={() => { setOrder("descending") }}>Descending</Button>
+                </ButtonGroup>
                 <TextField
                     id="outlined-basic"
                     onChange={inputHandler}
@@ -64,22 +65,13 @@ export function App() {
                     label="Search Items"
                     color="primary"
                 />
-
             </Stack>
             <Container class="center">
                 <Paper class="paper" elevation={3}>
                     <Test sortData={sortData} order={order} search={search} filterData={filterData} />
                 </Paper>
             </Container>
-            <Container class="header">
-                <h1 className="font-weight-light"><Logo class="logo" /> Test Solution</h1>
-            </Container>
-            
         </div>
-        //<div class="center">
-        //    <h1 class="display-inline-block">Hello world</h1>
-            
-        //</div>
   );
 }
 
