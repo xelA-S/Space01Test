@@ -13,7 +13,7 @@ function App() {
 
 
     const sortData = (data,sortOrder) => {
-        if (data !== [] ) {
+        if (data.length) {
             if (sortOrder == "ascending") {
                 return data.sort((a,b) => a.price - b.price).slice(0,5)
             }
