@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+body {
+    background-color: #fc4f5f;
+    font-family: "Montserrat",sans-serif;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+    text-align: center;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.header ButtonGroup {
+    margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.paper {
+    height: 600px;
+    min-width: 99vw;
+    padding-top: 10px;
+    border: solid;
+    border-color: #ffffff;
+    background-color: #011929;
+    overflow-x: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.itemText {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: bold;
+}
+
+.logo{
+    width:100px;
+    height:43px;
+    display: inline;
+}
+
+.searchForm{
+    margin-bottom:2px;
+}
+
+.view {
+    display: inline;
+}
+
+#outlined-basic{
+    background-color:aliceblue
 }
